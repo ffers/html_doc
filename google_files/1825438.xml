@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Download HTML page and its contents - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/question/1825438" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/q/1825438" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2022-08-18T08:59:08Z</updated>
+    <id>https://stackoverflow.com/feeds/question/1825438</id>
+    <creativeCommons:license>https://creativecommons.org/licenses/by-sa/4.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/1825438</id>
+        <re:rank scheme="https://stackoverflow.com">57</re:rank>
+        <title type="text">Download HTML page and its contents</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="html" />
+        <author>
+            <name>bocca</name>
+            <uri>https://stackoverflow.com/users/196169</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/1825438/download-html-page-and-its-contents" />
+        <published>2009-12-01T10:58:09Z</published>
+        <updated>2022-03-25T13:25:05Z</updated>
+        <summary type="html">
+            &lt;p&gt;Does &lt;strong&gt;Python&lt;/strong&gt; have any way of downloading an entire &lt;code&gt;HTML&lt;/code&gt; page and its contents (&lt;em&gt;images, css&lt;/em&gt;) to a local folder given a url. And updating local html file to pick content locally.&lt;/p&gt;&#xA;
+        </summary>
+    </entry>
+            <entry>
+        <id>https://stackoverflow.com/questions/1825438/-/1825455#1825455</id>
+        <re:rank scheme="https://stackoverflow.com">12</re:rank>
+        <title type="text">Answer by Lucas for Download HTML page and its contents</title>
+        <author>
+            <name>Lucas</name>
+            <uri>https://stackoverflow.com/users/74660</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/1825438/download-html-page-and-its-contents/1825455#1825455" />
+        <published>2009-12-01T11:00:21Z</published>
+        <updated>2009-12-01T11:00:21Z</updated>
+        <summary type="html">&lt;p&gt;You can use the urlib:&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code&gt;import urllib.request&#xA;&#xA;opener = urllib.request.FancyURLopener({})&#xA;url = &quot;http://stackoverflow.com/&quot;&#xA;f = opener.open(url)&#xA;content = f.read()&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;</summary>
+    </entry>
+            <entry>
+        <id>https://stackoverflow.com/questions/1825438/-/1825465#1825465</id>
+        <re:rank scheme="https://stackoverflow.com">42</re:rank>
+        <title type="text">Answer by David Webb for Download HTML page and its contents</title>
+        <author>
+            <name>David Webb</name>
+            <uri>https://stackoverflow.com/users/3171</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/1825438/download-html-page-and-its-contents/1825465#1825465" />
+        <published>2009-12-01T11:02:16Z</published>
+        <updated>2009-12-01T11:02:16Z</updated>
+        <summary type="html">&lt;p&gt;You can use the &lt;a href=&quot;http://docs.python.org/library/urllib.html&quot; rel=&quot;noreferrer&quot; title=&quot;Python documentation&quot;&gt;&lt;code&gt;urllib&lt;/code&gt;&lt;/a&gt; module to download individual URLs but this will just return the data.  It will not parse the HTML and automatically download things like CSS files and images.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;If you want to download the &quot;whole&quot; page you will need to parse the HTML and find the other things you need to download.  You could use something like &lt;a href=&quot;http://www.crummy.com/software/BeautifulSoup/&quot; rel=&quot;noreferrer&quot; title=&quot;Beautiful Soup website&quot;&gt;Beautiful Soup&lt;/a&gt; to parse the HTML you retrieve.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/257409/download-image-file-from-the-html-page-source-using-python&quot; title=&quot;Stack Overflow question 257409&quot;&gt;This question&lt;/a&gt; has some sample code doing exactly that.&lt;/p&gt;&#xA;</summary>
+    </entry>
+            <entry>
+        <id>https://stackoverflow.com/questions/1825438/-/1825727#1825727</id>
+        <re:rank scheme="https://stackoverflow.com">11</re:rank>
+        <title type="text">Answer by Andrew Dalke for Download HTML page and its contents</title>
+        <author>
+            <name>Andrew Dalke</name>
+            <uri>https://stackoverflow.com/users/64618</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/1825438/download-html-page-and-its-contents/1825727#1825727" />
+        <published>2009-12-01T11:59:01Z</published>
+        <updated>2009-12-01T11:59:01Z</updated>
+        <summary type="html">&lt;p&gt;What you&#x27;re looking for is a mirroring tool. If you want one in Python, PyPI lists &lt;a href=&quot;http://pypi.python.org/pypi/spider.py/0.5&quot; rel=&quot;noreferrer&quot;&gt;spider.py&lt;/a&gt; but I have no experience with it. Others might be better but I don&#x27;t know - I use &#x27;wget&#x27;, which supports &lt;a href=&quot;http://wget.addictivecode.org/FrequentlyAskedQuestions#head-885de428f3bea3d05abc99e24ecff2425d42cb3e&quot; rel=&quot;noreferrer&quot;&gt;getting the CSS&lt;/a&gt; and the images. This probably does what you want (quoting from &lt;a href=&quot;http://www.delorie.com/gnu/docs/wget/wget_31.html&quot; rel=&quot;noreferrer&quot;&gt;the manual&lt;/a&gt;)&lt;/p&gt;&#xA;&#xA;&lt;blockquote&gt;&#xA;  &lt;p&gt;Retrieve only one HTML page, but make&#xA;  sure that all the elements needed for&#xA;  the page to be displayed, such as&#xA;  inline images and external style&#xA;  sheets, are also downloaded. Also make&#xA;  sure the downloaded page references&#xA;  the downloaded links.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;pre&gt;&lt;code&gt;wget -p --convert-links http://www.server.com/dir/page.html&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;</summary>
+    </entry>
+            <entry>
+        <id>https://stackoverflow.com/questions/1825438/-/62207356#62207356</id>
+        <re:rank scheme="https://stackoverflow.com">9</re:rank>
+        <title type="text">Answer by imbr for Download HTML page and its contents</title>
+        <author>
+            <name>imbr</name>
+            <uri>https://stackoverflow.com/users/1207193</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/1825438/download-html-page-and-its-contents/62207356#62207356" />
+        <published>2020-06-05T02:54:09Z</published>
+        <updated>2022-03-25T13:25:05Z</updated>
+        <summary type="html">&lt;h2&gt;Function &lt;code&gt;savePage &lt;/code&gt; bellow:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Saves the &lt;code&gt;.html&lt;/code&gt; and downloaded &lt;code&gt;javascripts&lt;/code&gt;, &lt;code&gt;css&lt;/code&gt; and &lt;code&gt;images&lt;/code&gt; based on the tags &lt;em&gt;script&lt;/em&gt;, &lt;em&gt;link&lt;/em&gt; and &lt;em&gt;img&lt;/em&gt; (&lt;code&gt;tags_inner&lt;/code&gt; dict keys).&lt;/li&gt;&#xA;&lt;li&gt;Resource files are saved on folder with suffix &lt;code&gt;_files&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Any exceptions are printed on &lt;code&gt;sys.stderr&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Uses Python 3&#x2B; &lt;em&gt;&lt;a href=&quot;https://2.python-requests.org/en/master/&quot; rel=&quot;nofollow noreferrer&quot;&gt;Requests&lt;/a&gt;&lt;/em&gt;, &lt;em&gt;&lt;a href=&quot;https://www.crummy.com/software/BeautifulSoup/bs4/doc/#&quot; rel=&quot;nofollow noreferrer&quot;&gt;BeautifulSoup&lt;/a&gt;&lt;/em&gt; and other standard libraries.&lt;/p&gt;&#xA;&lt;p&gt;The function &lt;code&gt;savePage&lt;/code&gt; receives a &lt;code&gt;url&lt;/code&gt; and &lt;code&gt;pagepath&lt;/code&gt; where to save it.&lt;/p&gt;&#xA;&lt;h3&gt;You can expand/adapt it to suit your needs&lt;/h3&gt;&#xA;&lt;pre&gt;&lt;code&gt;import os, sys, re&#xA;import requests&#xA;from urllib.parse import urljoin&#xA;from bs4 import BeautifulSoup&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;pre&gt;&lt;code&gt;def savePage(url, pagepath=&#x27;page&#x27;):&#xA;    def savenRename(soup, pagefolder, session, url, tag, inner):&#xA;        if not os.path.exists(pagefolder): # create only once&#xA;            os.mkdir(pagefolder)&#xA;        for res in soup.findAll(tag):   # images, css, etc..&#xA;            if res.has_attr(inner): # check inner tag (file object) MUST exists  &#xA;                try:&#xA;                    filename, ext = os.path.splitext(os.path.basename(res[inner])) # get name and extension&#xA;                    filename = re.sub(&#x27;\W&#x2B;&#x27;, &#x27;&#x27;, filename) &#x2B; ext # clean special chars from name&#xA;                    fileurl = urljoin(url, res.get(inner))&#xA;                    filepath = os.path.join(pagefolder, filename)&#xA;                    # rename html ref so can move html and folder of files anywhere&#xA;                    res[inner] = os.path.join(os.path.basename(pagefolder), filename)&#xA;                    if not os.path.isfile(filepath): # was not downloaded&#xA;                        with open(filepath, &#x27;wb&#x27;) as file:&#xA;                            filebin = session.get(fileurl)&#xA;                            file.write(filebin.content)&#xA;                except Exception as exc:&#xA;                    print(exc, file=sys.stderr)&#xA;    session = requests.Session()&#xA;    #... whatever other requests config you need here&#xA;    response = session.get(url)&#xA;    soup = BeautifulSoup(response.text, &amp;quot;html.parser&amp;quot;)&#xA;    path, _ = os.path.splitext(pagepath)&#xA;    pagefolder = path&#x2B;&#x27;_files&#x27; # page contents folder&#xA;    tags_inner = {&#x27;img&#x27;: &#x27;src&#x27;, &#x27;link&#x27;: &#x27;href&#x27;, &#x27;script&#x27;: &#x27;src&#x27;} # tag&amp;amp;inner tags to grab&#xA;    for tag, inner in tags_inner.items(): # saves resource files and rename refs&#xA;        savenRename(soup, pagefolder, session, url, tag, inner)&#xA;    with open(path&#x2B;&#x27;.html&#x27;, &#x27;wb&#x27;) as file: # saves modified html doc&#xA;        file.write(soup.prettify(&#x27;utf-8&#x27;))&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt; saving &lt;code&gt;google.com&lt;/code&gt; as &lt;code&gt;google.html&lt;/code&gt; and contents on &lt;code&gt;google_files&lt;/code&gt; folder. (&lt;em&gt;current folder&lt;/em&gt;)&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;soup = savePage(&#x27;https://www.google.com&#x27;, &#x27;google&#x27;)&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;</summary>
+    </entry>
+</feed>
